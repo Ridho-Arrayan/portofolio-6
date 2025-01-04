@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - Eki Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-detail {
+            min-height: 100vh;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--dark) 0%, var(--background) 100%);
+        }
+
+        .project-detail-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .project-info h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .project-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 2rem;
+        }
+
+        .project-image img {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .project-detail-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="project-detail">
+        <div class="project-detail-content">
+            <div class="project-info">
+                <a href="index.html#projects" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Projects
+                </a>
+                <h1 id="project-title">Loading...</h1>
+                <p id="project-description">Loading...</p>
+            </div>
+            <div class="project-image">
+                <img id="project-img" src="" alt="Project Preview">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const project = urlParams.get('project');
+
+            const projectDetails = {
+                aritmatika: {
+                    title: 'Aritmatika Solver',
+                    description: 'Program ini dirancang untuk mempermudah pengguna dalam menyelesaikan soal-soal Aritmatika secara otomatis. Menggunakan teknologi modern dan algoritma yang efisien untuk memberikan hasil yang akurat.',
+                    image: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/4ad8b578469635ef96a490c07cd1eb76~c5_1080x1080.jpeg?lk3s=a5d48078&nonce=19515&refresh_token=4b80c16bb88087978bc47fcd63d97006&x-expires=1736150400&x-signature=fnv%2B%2Bob3w8citsmP4ERkCdUhdAo%3D&shp=a5d48078&shcp=81f88b70'
+                },
+                autochat: {
+                    title: 'AutoChat-Discord',
+                    description: 'AutoChat adalah solusi otomatisasi untuk mengirim pesan ke saluran Discord secara terjadwal. Aplikasi ini membantu pengguna mengatur dan mengelola pesan otomatis dengan mudah.',
+                    image: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/4ad8b578469635ef96a490c07cd1eb76~c5_1080x1080.jpeg?lk3s=a5d48078&nonce=19515&refresh_token=4b80c16bb88087978bc47fcd63d97006&x-expires=1736150400&x-signature=fnv%2B%2Bob3w8citsmP4ERkCdUhdAo%3D&shp=a5d48078&shcp=81f88b70'
+                }
+            };
+
+            if (project && projectDetails[project]) {
+                document.getElementById('project-title').textContent = projectDetails[project].title;
+                document.getElementById('project-description').textContent = projectDetails[project].description;
+                document.getElementById('project-img').src = projectDetails[project].image;
+                document.title = `${projectDetails[project].title} - Eki Portfolio`;
+            }
+        });
+    </script>
+</body>
+</html>

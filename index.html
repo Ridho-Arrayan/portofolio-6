@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridho Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">Ridho</a>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Frontend<br>Developer</h1>
+                <p class="typing-text">RA2K</p>
+                <p class="subtitle">Menciptakan Website Yang Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.</p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Javascript</span>
+                    <span>Node.js</span>
+                    <span>Tailwind</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">Projects</a>
+                    <a href="#contact" class="btn secondary">Contact</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://cdn-icons-png.flaticon.com/512/5766/5766472.png" alt="Frontend Development" class="floating">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about slide-in">
+        <h2>About Me</h2>
+        <p class="about-subtitle">Transforming ideas into digital experiences</p>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Hello, I'm<br>Ridho arrayan<br>A.S</h3>
+                <p>Web developer berusia 15 tahun yang fokus pada pengembangan front-end dan desain interaktif, berpengalaman dalam HTML, CSS, JavaScript, dan framework seperti React. Saya juga memiliki minat dalam AI dan machine learning, serta sering bereksperimen dengan proyek-proyek kreatif seperti game dan deteksi objek. Alasan saya sering mengerjakan berbagai proyek adalah untuk membangun personal branding yang kuat, karena saya percaya bahwa membangun reputasi di dunia digital itu sangat penting di masa depan. GitHub saya adalah tempat saya berbagi pengetahuan, eksplorasi, dan mengasah keterampilan yang akan membuka banyak peluang di masa depan.</p>
+                <div class="about-buttons">
+                    <a href="#" class="btn primary">Download CV</a>
+                    <a href="#projects" class="btn secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/4ad8b578469635ef96a490c07cd1eb76~c5_1080x1080.jpeg?lk3s=a5d48078&nonce=19515&refresh_token=4b80c16bb88087978bc47fcd63d97006&x-expires=1736150400&x-signature=fnv%2B%2Bob3w8citsmP4ERkCdUhdAo%3D&shp=a5d48078&shcp=81f88b70" alt="Profile Picture" class="profile-circle">
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-code"></i>
+                    <h4>65</h4>
+                    <p>TOTAL PROJECTS</p>
+                    <span>Innovative web solutions crafted</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-certificate"></i>
+                    <h4>0</h4>
+                    <p>CERTIFICATES</p>
+                    <span>Professional skills validated</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-globe"></i>
+                    <h4>1</h4>
+                    <p>YEARS OF EXPERIENCE</p>
+                    <span>Continuous learning journey</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Portfolio Showcase</h2>
+        <p class="projects-subtitle">Explore my journey through projects, certifications, and technical expertise. Each section represents a milestone in my continuous learning path.</p>
+        
+        <div class="project-tabs">
+            <button class="tab-btn active" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="certificates">Certificates</button>
+            <button class="tab-btn" data-tab="tech-stack">Tech Stack</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://www.pngkey.com/png/full/134-1349441_computer-science-png.png" alt="Aritmatika Solver">
+                <div class="project-info">
+                    <h3>Aritmatika Solver</h3>
+                    <p>Program ini dirancang untuk mempermudah pengguna dalam menyelesaikan soal-soal Aritmatika secara otomatis.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn small">Live Demo</a>
+                        <a href="#" class="btn small secondary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/4ad8b578469635ef96a490c07cd1eb76~c5_1080x1080.jpeg?lk3s=a5d48078&nonce=19515&refresh_token=4b80c16bb88087978bc47fcd63d97006&x-expires=1736150400&x-signature=fnv%2B%2Bob3w8citsmP4ERkCdUhdAo%3D&shp=a5d48078&shcp=81f88b70" alt="AutoChat-Discord">
+                <div class="project-info">
+                    <h3>AutoChat-Discord</h3>
+                    <p>AutoChat adalah solusi otomatisasi untuk mengirim pesan ke saluran Discord secara terjadwal.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn small">Live Demo</a>
+                        <a href="#" class="btn small secondary">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Got a question? Send me a message, and I'll get back to you soon.</h2>
+        <div class="contact-container">
+            <div class="connect-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links-grid">
+                    <a href="#" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <strong>Let's Connect</strong>
+                            <span>on LinkedIn</span>
+                        </div>
+                    </a>
+                    <a href="#" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <strong>Instagram</strong>
+                            <span>@ridho.arrayan</span>
+                        </div>
+                    </a>
+                    <a href="#" class="social-link youtube">
+                        <i class="fab fa-youtube"></i>
+                        <div>
+                            <strong>Youtube</strong>
+                            <span>@Ridho Arrayan</span>
+                        </div>
+                    </a>
+                    <a href="#" class="social-link github">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <strong>Github</strong>
+                            <span>@Ridho-Arrayan</span>
+                        </div>
+                    </a>
+                    <a href="#" class="social-link tiktok">
+                        <i class="fab fa-tiktok"></i>
+                        <div>
+                            <strong>Tiktok</strong>
+                            <span>@ridhoarrayan.26</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="comments-section">
+                <h3>Comments <span id="comment-count">(0)</span></h3>
+                <div class="comment-form">
+                    <input type="text" id="comment-name" placeholder="Your Name" required>
+                    <textarea id="comment-message" placeholder="Write your message here..." required></textarea>
+                    <div class="profile-upload">
+                        <label for="profile-photo">
+                            <i class="fas fa-image"></i>
+                            Choose Profile Photo
+                        </label>
+                        <input type="file" id="profile-photo" accept="image/*">
+                        <span class="file-limit">Max file size: 5MB</span>
+                    </div>
+                    <button id="post-comment" class="btn primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Post Comment
+                    </button>
+                </div>
+                <div id="comments-container" class="comments-container">
+                    <!-- Comments will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Eki. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
